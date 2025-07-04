@@ -7,16 +7,16 @@ const PizzaBox=(props)=>{
         <div className=''>
 Pizzas Available:{props.pizzaBase}
         </div>
-        <div className='bg-[#70005d] border-none py-[10px] px-[20px] rounded-lg text-white cursor-pointer' onClick={props.orderPizza}>
+        <p className='bg-[#70005d] border-none py-[10px] px-[20px] rounded-lg text-white cursor-pointer' onClick={props.orderPizza}>
           Order Pizza
-        </div>
+        </p>
         </div>
     )
 }
 
 const mapStateToProps=(state)=>{
     return {
-        pizzaBase:state.pizzaBase
+        pizzaBase:state.pizza.pizzaBase
     }
 }
 
