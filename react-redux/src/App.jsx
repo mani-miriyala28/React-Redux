@@ -3,6 +3,7 @@ import { Provider } from 'react-redux'
 import { store } from './components/redux/store'
 import PizzaBox from './components/PizzaBox'
 import BurgerBox from './components/BurgerBox'
+import Products from './components/Products'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <div className='App'>
         <PizzaBox />
         <BurgerBox />
+        <Products/>
       </div>
     </Provider>
   )
